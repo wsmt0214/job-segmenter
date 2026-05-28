@@ -1,0 +1,15 @@
+pymysql
+requests
+numpy
+pandas
+scikit-learn
+scipy
+sentence-transformers
+transformers
+torch
+datasets
+tqdm
+matplotlib
+seaborn
+fastapi
+uvicorn[standard]

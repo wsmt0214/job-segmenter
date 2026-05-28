@@ -1,0 +1,53 @@
+# 포트폴리오 업로드 대상만 허용, 나머지 전부 제외
+
+# 1) 기본: 전부 ignore
+*
+
+# 2) 디렉터리 탐색 허용 (하위 whitelist 적용용)
+!*/
+
+# 3) 포트폴리오 포함 — 루트
+!.gitignore
+!README.md
+!requirements.txt
+!config.py
+!schema_v2.py
+!schema_attrs.py
+
+# 4) 포트폴리오 포함 — 코드
+!scripts/
+!scripts/**
+!block3/
+!block3/**
+!block4/
+!block4/**
+
+# 5) data — v2 스키마·README만
+!data/
+data/**
+!data/v2/
+data/v2/**
+!data/v2/README.md
+!data/v2/schema_definition_v2.json
+
+# 6) 재포함 방지 (whitelist보다 우선)
+**/__pycache__/
+*.py[cod]
+venv/
+.venv/
+models/
+logs/
+*.log
+*.csv
+*.jsonl
+*.pkl
+*.pt
+*.bin
+.local/
+.env
+.env.*
+local_config.py
+secrets/
+credentials/
+docs/
+docs/**
